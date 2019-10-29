@@ -2,6 +2,7 @@
   <div class="hello">
     <p>test</p>
     <p>test1</p>
+       <P>test2</P>
   </div>
 </template>
 
