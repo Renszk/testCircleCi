@@ -9,16 +9,16 @@ executors:
           TZ: Asia/Tokyo
 
 commands:
-  restore_npm:
+  restore_yarn:
     steps:
       - restore_cache:
-          name: Restore npm dependencies
-          key: npm-v1-{{ checksum "package.json" }}
+          name: Restore yarn dependencies
+          key: yarn-v1-{{ checksum "package.json" }}
   save_npm:
     steps:
       - save_cache:
-          name: Cache npm dependencies
-          key: npm-v1-{{ checksum "package.json" }}
+          name: Cache yarn dependencies
+          key: yarn-v1-{{ checksum "package.json" }}
           paths:
             - ~/repo/node_modules
 
@@ -28,20 +28,20 @@ jobs:
       name: default
     steps:
       - checkout
-      - restore_npm
+      - restore_yarn
       - run:
-          name: Install npm dependencies
-          command: npm ci
+          name: Install yarn dependencies
+          command: yarn ci
       - save_npm
   lint:
     executor:
       name: default
     steps:
       - checkout
-      - restore_npm
+      - restore_yarn
       - run:
           name: Run lint
-          command: npm run lint
+          command: yarn run lint
 
 workflows:
   linting:
