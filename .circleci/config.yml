@@ -31,7 +31,7 @@ jobs:
       - restore_yarn
       - run:
           name: Install yarn dependencies
-          command: yarn ci
+          command: yarn install
       - save_npm
   lint:
     executor:
