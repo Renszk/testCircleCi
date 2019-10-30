@@ -17,6 +17,6 @@
     "no-console": "warn",
     "no-var": "error",
     "prefer-const": "error",
-    "indent": ["error", 2]
+    "vue/html-indent": ["error", 2]
   }
 }
