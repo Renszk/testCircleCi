@@ -21,7 +21,7 @@ commands:
           key: yarn-{{ checksum "package.json" }}
           paths:
             - ~/.cache/yarn
-  run:
+  run_yarn:
     steps:
       - run:
           name: Install yarn dependencies
@@ -33,7 +33,7 @@ jobs:
     steps:
       - checkout
       - restore_yarn
-      - run
+      - run_yarn
       - save_yarn
   lint:
     executor:
