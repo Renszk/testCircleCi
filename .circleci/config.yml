@@ -13,14 +13,19 @@ commands:
     steps:
       - restore_cache:
           name: Restore yarn dependencies
-          key: yarn-v1-{{ checksum "package.json" }}
+          key: yarn-{{ checksum "package.json" }}
   save_yarn:
     steps:
       - save_cache:
           name: Cache yarn dependencies
-          key: yarn-v1-{{ checksum "package.json" }}
+          key: yarn-{{ checksum "package.json" }}
           paths:
             - ~/.cache/yarn
+  run:
+    steps:
+      - run:
+          name: Install yarn dependencies
+          command: yarn install --frozen-lockfile
 jobs:
   setup:
     executor:
@@ -28,9 +33,7 @@ jobs:
     steps:
       - checkout
       - restore_yarn
-      - run:
-          name: Install yarn dependencies
-          command: yarn install --frozen-lockfile
+      - run
       - save_yarn
   lint:
     executor:
