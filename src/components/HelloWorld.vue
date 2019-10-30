@@ -1,8 +1,8 @@
 <template>
-  <div class="hello">
+  <div>
     <p>test</p>
     <p>test1</p>
-    <P>test2</P>
+    <p>test2</p>
     <p>test3</p>
     <p>test4</p>
     <p>test5</p>
@@ -16,6 +16,7 @@ export default {
     msg: String
   }
 }
+const test = "test";
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
