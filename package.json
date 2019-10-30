@@ -8,13 +8,16 @@
     "build": "vue-cli-service build",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint **/*.{js,jsx}"
   },
   "dependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
     "core-js": "^3.3.2",
+    "eslint": "3.19.0",
+    "eslint-plugin-prettier": "^3.1.1",
     "vue": "^2.6.10",
-    "vue-jest": "^3.0.5"
+    "vue-jest": "^3.0.5",
+    "yarn": "^1.19.1"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -31,8 +34,9 @@
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
     "babel-eslint": "^10.0.3",
-    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-vue": "^5.2.3",
+    "prettier": "^1.18.2",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
@@ -42,7 +46,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "eslint:^5.8.0"
     ],
     "rules": {},
     "parserOptions": {
