@@ -20,8 +20,7 @@ commands:
           name: Cache yarn dependencies
           key: yarn-v1-{{ checksum "package.json" }}
           paths:
-            - ~/repo/node_modules
-
+            - ~/.cache/yarn
 jobs:
   setup:
     executor:
