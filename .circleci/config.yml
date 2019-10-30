@@ -14,7 +14,7 @@ commands:
       - restore_cache:
           name: Restore yarn dependencies
           key: yarn-v1-{{ checksum "package.json" }}
-  save_npm:
+  save_yarn:
     steps:
       - save_cache:
           name: Cache yarn dependencies
@@ -32,7 +32,7 @@ jobs:
       - run:
           name: Install yarn dependencies
           command: yarn install
-      - save_npm
+      - save_yarn
   lint:
     executor:
       name: default

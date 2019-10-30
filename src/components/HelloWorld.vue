@@ -1,10 +1,13 @@
 <template>
-  <div class="hello">
+  <div>
     <p>test</p>
     <p>test1</p>
-    <P>test2</P>
-      <p>test3</p>
+    <p>test2</p>
+    <p>test3</p>
     <p>test4</p>
+    <p>test5</p>
+    <P>test6</P>
+    <p>test7</p>
   </div>
 </template>
 
