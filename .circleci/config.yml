@@ -26,6 +26,11 @@ commands:
       - run:
           name: Install yarn dependencies
           command: yarn install --frozen-lockfile
+  run_lint:
+    steps:
+      - run:
+          name: Run lint
+          command: yarn run lint
 jobs:
   setup:
     executor:
@@ -41,9 +46,7 @@ jobs:
     steps:
       - checkout
       - restore_yarn
-      - run_lint:
-          name: Run lint
-          command: yarn run lint
+      - run_lint
 
 workflows:
   linting:
