@@ -41,7 +41,7 @@ jobs:
     steps:
       - checkout
       - restore_yarn
-      - run:
+      - run_lint:
           name: Run lint
           command: yarn run lint
 
