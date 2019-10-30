@@ -2,20 +2,17 @@
   "env": {
     "browser": true,
     "es6": true,
-    "jest": true,
-    "jest/globals": true,
     "node": true
   },
   "extends": [
     "eslint:recommended",
     "plugin:vue/base",
     "plugin:vue/essential",
-    "plugin:jest/recommended"
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "sourceType": "module"
   },
-  "plugins": ["jest"],
   "rules": {
     "no-console": "warn",
     "no-var": "error",

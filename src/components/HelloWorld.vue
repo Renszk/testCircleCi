@@ -8,18 +8,18 @@
     <p>test5</p>
     <P>test6</P>
     <p>test7</p>
-    <p>test8</p>
+     <p>test8</p>
     <p>test9</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
     msg: String
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
