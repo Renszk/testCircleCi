@@ -16,7 +16,8 @@
     "eslint": "3.19.0",
     "eslint-plugin-prettier": "^3.1.1",
     "vue": "^2.6.10",
-    "vue-jest": "^3.0.5"
+    "vue-jest": "^3.0.5",
+    "yarn": "^1.19.1"
   },
   "jest": {
     "moduleFileExtensions": [
