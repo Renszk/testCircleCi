@@ -8,6 +8,7 @@
     <p>test5</p>
     <P>test6</P>
     <p>test7</p>
+    <p>test8</p>
   </div>
 </template>
 
