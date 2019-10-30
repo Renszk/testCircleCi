@@ -6,6 +6,7 @@
     <p>test3</p>
     <p>test4</p>
     <p>test5</p>
+    <P>test6</P>
   </div>
 </template>
 
@@ -16,7 +17,6 @@ export default {
     msg: String
   }
 }
-const test = "test";
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
