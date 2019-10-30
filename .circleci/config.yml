@@ -13,12 +13,12 @@ commands:
     steps:
       - restore_cache:
           name: Restore yarn dependencies
-          key: yarn-v1-{{ checksum "package.json" }}
-  save_npm:
+          key: yarn-v2-{{ checksum "package.json" }}
+  save_yarn:
     steps:
       - save_cache:
           name: Cache yarn dependencies
-          key: yarn-v1-{{ checksum "package.json" }}
+          key: yarn-v2-{{ checksum "package.json" }}
           paths:
             - ~/repo/node_modules
 
@@ -31,8 +31,8 @@ jobs:
       - restore_yarn
       - run:
           name: Install yarn dependencies
-          command: yarn install
-      - save_npm
+          command: yarn install --frozen-lockfile
+      - save_yarn
   lint:
     executor:
       name: default
