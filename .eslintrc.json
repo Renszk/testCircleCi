@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "vue",
+    "plugin:vue/recommended",
+    "eslint:recommended",
+    "plugin:vue/base",
+    "plugin:vue/essential",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "Vue": true
+  },
+  "rules": {
+    "no-console": "warn",
+    "no-var": "error",
+    "prefer-const": "error",
+    "vue/html-indent": ["error", 2]
+  }
+}
