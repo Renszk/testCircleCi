@@ -17,12 +17,13 @@
      <p>test15</p>
     <p>test16</p>
     <p>test17</p>
+    <p>test18</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld"
+  name: "HelloWorld
 };
 </script>
 
