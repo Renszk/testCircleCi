@@ -41,7 +41,11 @@ jobs:
       - restore_yarn
       - run:
           name: Run lint
-          command: yarn run lint
+          command:
+              mkdir -p /tmp/test-reports/eslint
+              node_modules/.bin/eslint . --format junit --output-file /tmp/test-reports/eslint/results.xml
+      - store_test_results:
+          path: /tmp/test-reports
 
 workflows:
   linting:
