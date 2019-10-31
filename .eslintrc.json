@@ -5,6 +5,8 @@
     "node": true
   },
   "extends": [
+    "vue",
+    "plugin:vue/recommended",
     "eslint:recommended",
     "plugin:vue/base",
     "plugin:vue/essential",
@@ -12,6 +14,12 @@
   ],
   "parserOptions": {
     "sourceType": "module"
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "Vue": true
   },
   "rules": {
     "no-console": "warn",
