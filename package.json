@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "test": "jest --coverage",
     "test:watch": "jest --watch",
-    "lint": "eslint --ext .js,.vue resources/js/"
+    "lint": "eslint --ext .js,.vue resources/js/ --fix"
   },
   "dependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
@@ -30,6 +30,7 @@
     }
   },
   "devDependencies": {
+    "eslint": "3.19.0",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-service": "^4.0.0",
