@@ -24,7 +24,14 @@
 <script>
 export default {
   name: "HelloWorld"
-};
+}
+const a = "a";
+switch(a){
+    case "a":
+        break;
+    case "b":
+        break;
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
