@@ -1,19 +1,39 @@
 <template>
-  <div class="hello">
+  <div>
     <p>test</p>
     <p>test1</p>
-    <P>test2</P>
-      <p>test3</p>
+    <p>test2</p>
+    <p>test3</p>
     <p>test4</p>
+    <p>test5</p>
+    <P>test6</P>
+    <p>test7</p>
+     <p>test8</p>
+    <p>test9</p>
+    <p>test10</p>
+    <p>test12</p>
+    <p>test13</p>
+    <p>test14</p>
+                <p>test15</p>
+    <p>test16</p>
+    <p>test17</p>
+    <p>test18</p>
+    <p>test19</p>
+    <p>test20</p>
+    <p>test21</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: "HelloWorld"
+}
+const a = "a";
+switch(a){
+    case "a":
+        break;
+    case "b":
+        break;
 }
 </script>
 
